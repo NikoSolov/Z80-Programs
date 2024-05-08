@@ -15,10 +15,10 @@
 ;============  LOAD ALL PROGRAMM ===================
 START_LOAD:
 ; -- set 8255 --
-    LD hl, $0EE03
-    LD (hl), $90
+    ld hl, $0EE03
+    ld (hl), $90
 ; -- load rest from cartridge (FROM END TO 0000) --
-    LD HL, END_ROM-1  ; SET HL = ADDR END OF PROGRAMM
+    ld hl, END_ROM-1  ; SET HL = ADDR END OF PROGRAMM
 
 LOAD:
     LD ($EE01), hl     ; SET ADDR OF CARTRIDGE

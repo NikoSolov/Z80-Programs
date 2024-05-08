@@ -1,0 +1,4 @@
+http://sun.hasenbraten.de/vasm/daily/vasm.tar.gz
+https://emu80.org/v4beta/Emu80qt_40466_linux_x86-64.tar.gz
+https://emu80.org/files/utils/bin2tape_103.zip
+https://emu80.org/files/utils/rk2wav.zip
