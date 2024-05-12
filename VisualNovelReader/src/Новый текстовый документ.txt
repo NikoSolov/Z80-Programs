@@ -1,0 +1,8 @@
+============================
+| text			txt
+| funny_image		img
+| weird_anim		anm
+| collest_song_ever	mus
+| sans			mov
+|
+=============================
