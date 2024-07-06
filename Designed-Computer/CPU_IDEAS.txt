@@ -1,0 +1,63 @@
+Is that neccessary that all logical and arithmetical operation results loads only to reg A and HL?
+--------- Registers --------
+A - accumulator
+BC - how much
+DE - addr from
+HL - addr to
+
+PC - Program Counter
+SP - Stack Pointer
+----------------------------
+
+LD - Load to and from
+A,B,C,D,E,H,L,(HL),(BC),(DE),(**),(*) - 8bit
+BC,DE,HL,(**) - 16bit
+
+INC - Increase by one Register Content
+DEC - Decrease by one Register Content
+---------------------------------------------------------
+Not 16 bit logic operation 'cause doesnt have carry flag
+AND - AND A and 8bit register or mem to A - 8bit
+OR - OR A and 8bit register or mem to A - 8bit
+XOR - XOR A and 8bit register or mem to A - 8bit
+CPL - NOT A to A
+
+------> HL ^ BC
+LD A, H
+AND B
+LD H,A
+LD A, L
+AND C
+LD H, A
+------- 6 bytes and any order (L<->H) 
+*-----> what would be cool
+AND H,B - and H and B, load to H -|  same      but loads in
+AND B,H - and B and H, load to B -| result, different registers
+
+---------------------------------------------------------
+ADD - ADD A and reg or mem to A
+ADC - ADD A and reg or mem and carry bit load to A
+SUB - SUB A and reg or mem load to carry
+SBC - SUB A and reg or mem and carry bit load to A
+
+----> HL <= HL + BC
+LD A, L
+ADD C
+LD L,A
+LD A,H
+ADC B
+LD H,L
+-------- 6 bytes and right order (L->H) for carry
+*-----> what would be cool
+ADD L,C - and L and C, load to L
+ADC B,H - and B and H, load to B
+
+
+
+
+
+
+
+
+
+
